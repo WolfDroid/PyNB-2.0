@@ -56,7 +56,7 @@ def func_p():
     window.style.configure('Content.TLabel', font = ('Consolas',8,'bold'))
     window.frame_header = ttk.Frame(window)
     window.frame_header.pack()
-    window.logo = PhotoImage(file = '2.png')
+    window.logo = PhotoImage(file = 'img.png')
     ttk.Label(window.frame_header, image = window.logo).grid(row = 0, column = 0, rowspan = 2,sticky = 'w',padx = 1)
     ttk.Label(window.frame_header, text = "Your file name : " + file_name,style = 'Header.TLabel').grid(row = 0, column = 1, padx = 5)
     ttk.Label(window.frame_header, text = "Note :\n1] Data Parameter Name      : Reference Data. \n2] \'Positive\' Data Parameter : Symbol that shows if the Patient has the Disease. \n3] Number of Parameter      : Number of Data Variable Parameter.\n").grid(row = 1, column = 1,sticky = 'w')
